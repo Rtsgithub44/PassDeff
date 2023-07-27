@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PassDeff</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <h1>PassDeff Generator [Creator:HellDev]</h1>
+  <label for="code-length">Code length:</label>
+  <input type="number" id="code-length" min="4" max="12" value="6">
+  <br>
+  <label for="include-numbers">Enable numbers:</label>
+  <input type="checkbox" id="include-numbers" checked>
+  <br>
+  <label for="include-symbols">Enable Symbols:</label>
+  <input type="checkbox" id="include-symbols" checked>
+  <br>
+  <button onclick="generateCode()">Generate Code</button>
+  <br>
+  <div id="generated-code"></div>
+  <script src="script.js"></script>
+</body>
+</html>
